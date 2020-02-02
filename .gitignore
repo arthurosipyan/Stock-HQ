@@ -6,5 +6,8 @@
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
+.idea
+/idea
 .venv
+/venv
 pip-selfcheck.json
