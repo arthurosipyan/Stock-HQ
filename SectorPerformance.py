@@ -1,8 +1,8 @@
 from alpha_vantage.sectorperformance import SectorPerformances
 
 
-def get_sector_performances(api_key):
-    sp = SectorPerformances(api_key)
+def get_sector_performances(key):
+    sp = SectorPerformances(key)
     sector_data, meta = sp.get_sector()
     ranks = []
     print("")
@@ -17,5 +17,5 @@ def get_sector_performances(api_key):
     for i in ranks:
         print("-------------------------------------\n", i, "\n-------------------------------------\n")
         for j in sector_data[i]:
-            print("{} : {}".format(j, round(sector_data[i][j], 3)))
+            print("{}: {}".format(j, round(sector_data[i][j], 3)))
         print("")
